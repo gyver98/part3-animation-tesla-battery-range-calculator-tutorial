@@ -22,7 +22,7 @@ class App extends Component {
         <Header />
         <div className="wrapper">
           <form className="tesla-battery">
-            <h1>Range Per Charge</h1>
+            <h1 className="title-animation">Range Per Charge</h1>
             <TeslaCarContainer />
             <TeslaStatsContainer />
             <div className="tesla-controls cf">

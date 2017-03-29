@@ -13,7 +13,13 @@
     font-size: 38px;
     text-align: center;
     letter-spacing: 3px;
-}   
+}
+
+.tesla-battery h1.title-animation {
+  -webkit-animation: focus-in-contract-bck 2.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: focus-in-contract-bck 2.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 2.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}    
 
 .tesla-climate-container {
   float: left;
@@ -27,3 +33,5 @@
   display: block;
   width: 100%;
 }
+
+@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
