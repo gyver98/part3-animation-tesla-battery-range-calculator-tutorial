@@ -5,6 +5,7 @@ class TeslaCounter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      animationEffect: false,
       direction: ''
     }
   }
@@ -14,16 +15,27 @@ class TeslaCounter extends React.Component {
     if (this.props.currentValue !== nextProps.currentValue) {
       const direction = this.props.currentValue < nextProps.currentValue ? 'increase' : 'decrese';
       this.setState({
+        animationEffect: true,
         direction
       });
+
+      setTimeout(
+        () => {
+          this.setState({
+            animationEffect: false
+          })
+        }, 500
+      );
       return;  
     } 
   }
   
   render() {
     const { initValues, currentValue, increment, decrement } = this.props;
-    const { direction } = this.state;
-    const animationClass = direction==='increase'? 'flip-in-hor-top' : 'flip-in-hor-bottom';
+    const { animationEffect, direction } = this.state;
+    const animationClass = animationEffect
+                      ? (direction==='increase'? 'flip-in-hor-top' : 'flip-in-hor-bottom')
+                      : '';
     
     return (
       <div className="tesla-counter">
