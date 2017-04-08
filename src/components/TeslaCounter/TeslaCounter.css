@@ -22,6 +22,7 @@
     line-height: 25px;
     font-weight: 400;
     position: relative; }
+    
     .tesla-counter__number span {
       position: absolute;
       top: 0;
@@ -69,3 +70,15 @@
       .tesla-counter__controls button:last-child {
         border-top: 1px solid #ccc;
         background-image: url(../../assets/counter/down.svg); }
+
+.flip-in-hor-bottom {
+    -webkit-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  -moz-animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; }
+.flip-in-hor-top {
+    -webkit-animation: flip-in-hor-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  -moz-animation: flip-in-hor-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	  animation: flip-in-hor-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; }
+
+@-webkit-keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}
+@-webkit-keyframes flip-in-hor-top{0%{-webkit-transform:rotateX(-80deg);transform:rotateX(-80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-top{0%{-webkit-transform:rotateX(-80deg);transform:rotateX(-80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}

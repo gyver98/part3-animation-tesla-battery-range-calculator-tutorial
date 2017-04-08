@@ -6,10 +6,12 @@ const TeslaCounter = ({ initValues, currentValue, increment, decrement }
     <p className="tesla-counter__title">{initValues.title}</p>
     <div className="tesla-counter__container cf">
       <div className="tesla-counter__item">
-        <p className="tesla-counter__number">
-          { currentValue }
-          <span>{ initValues.unit }</span>
-        </p>
+        <div className="flip-in-hor-top">
+          <p className="tesla-counter__number ">
+            { currentValue }
+            <span>{ initValues.unit }</span>
+          </p>
+        </div>
         <div className="tesla-counter__controls">
           <button 
             onClick={(e) => {
