@@ -1,4 +1,6 @@
-This is an tutorial for Rebuild Tesla's Battery Range Calculator with React.
-This is inspired on Todd Motto's [Building Tesla's battery range calculator with Angular 2 reactive forms](https://toddmotto.com/building-tesla-range-calculator-angular-2-reactive-forms)
+This is the third part of Building Tesla’s Battery Range Calculator with React series.
 
-> For more details, check out my post [Building Tesla's battery range calculator with](https://gyver98.github.io/blog/development/react/2017/02/13/react-tesla-battery-range-calculator-part1-english/)
+In part 1, we’ve created the application with only the React core, and in part 2 we’ve transformed the application by introducing Redux, a state management solution.
+
+> For more details, check out my post [Building Tesla's battery range calculator with React Part 1](https://gyver98.github.io/blog/development/react/2017/02/13/react-tesla-battery-range-calculator-part1-english/)
+[Building Tesla's battery range calculator with React Part 2 (Redux version)](https://gyver98.github.io/blog/development/react/2017/03/20/redux-tesla-battery-range-calculator-part2-english/)
